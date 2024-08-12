@@ -1,0 +1,44 @@
+<div class="relative flex-col">
+  <div class="flex flex-row gap-2 cursor-pointer transition-colors bg-white" (click)="toggleVisible()">
+    <img class= "rounded-full bg-cover w-[40px] w-max-[40px] w-min-[40px] h-[40px] h-min-[40px] h-max-[40px]" src="https://placehold.co/50x50" alt="">
+    <div class="flex flex-col gap-1">
+      <span class="text-sm font-semibold">{{name}}</span>
+      <span class="text-xs font-light">{{email}}</span>
+    </div>
+    <div class="flex justify-center items-center">
+      @if (isOpen) {
+        <span class="material-symbols-outlined">
+          keyboard_arrow_up
+        </span>
+      }
+      @else if (!isOpen) {
+        <span class="material-symbols-outlined">
+          keyboard_arrow_down
+        </span>
+      }
+    </div>
+  </div>
+
+  @if (isOpen) {
+    <div class="absolute flex flex-col w-full pt-1 bg-white rounded shadow-sm">
+      <div class="flex flex-row gap-2 pt-1 px-2 cursor-pointer hover:bg-gray-100 justify-start items-center">
+        <span class="material-symbols-outlined text-lg">
+          account_circle
+        </span>
+        <span class="text-sm">Profile</span>
+      </div>
+      <div class="flex flex-row gap-2 pt-1 px-2 cursor-pointer hover:bg-gray-100 justify-start items-center">
+        <span class="material-symbols-outlined text-lg">
+          settings
+        </span>
+        <span class="text-sm">Settings</span>
+      </div>
+      <div class="flex flex-row gap-2 pt-1 px-2 cursor-pointer hover:bg-gray-100 justify-start items-center">
+        <span class="material-symbols-outlined text-lg">
+          logout
+        </span>
+        <span class="text-sm">Logout</span>
+      </div>
+    </div>
+  }
+</div>
