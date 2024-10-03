@@ -1,27 +1,135 @@
-# CloudMesaFrontEnd
+# 🚀CloudMesa, a open source cloud alternative.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📋 Tabla de Contenidos
 
-## Code scaffolding
+- [📄 Descripción](#-descripción)
+- [🛠️ Tecnologías](#️-tecnologías)
+- [💾 Base de datos](#-base-de-datos)
+- [🔧 Instalación](#-instalación)
+- [🚀 Uso](#-uso)
+- [📚 Documentación](#-documentación)
+- [🤝 Contribuciones](#-contribuciones)
+- [📄 Licencia](#-licencia)
+- [✉️ Contacto](#️-contacto)
+  
+## 📄 Descripción
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+CloudMesa es un gestor cloud open source, permite a sus usuarios subir ficheros, compartir sus archivos con otros usuarios otorgandoles permisos especificos o por un tiempo limitado, personalizar sus carpetas con descripciones con MD a traves de un readme.md. La autentificacion a CloudMesa esta securizada a traves de JSON Web Tokens (JWT).
 
-## Build
+## 🛠️ Tecnologías
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Backend:** NestJS
+- **Frontend:** Angular
+- **Base de Datos:** MongoDB
+- **Contenedorización:** Docker
+- **Otros:** TypeScript, Docker Compose, etc.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 💾 Base de datos
+La base de datos esta compuesta por Usuarios, Archivos y permisos.
+![napkin-selection (1)](https://github.com/user-attachments/assets/8205d4e4-af99-46a6-a84e-fd73e8c36a66)
 
-## Running end-to-end tests
+### Estructura
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![asdsaddsaads](https://github.com/user-attachments/assets/85fb0063-fc97-4188-bfaf-63fc01be88ea)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Relaciones
+![napkin-selection (3)](https://github.com/user-attachments/assets/b48a33e3-e74b-426d-9f6c-e9dcfe6b5a31)
+
+
+
+## 🔧 Instalación
+
+### Prerrequisitos
+
+- [Node.js](https://nodejs.org/)
+- [Docker](https://www.docker.com/)
+- [Angular CLI](https://angular.io/cli)
+
+### Pasos
+
+1. **Clonar el repositorio**
+
+   ```bash
+   git clone https://github.com/sgm1018/CloudMesa_FrontEnd.git 
+   cd CloudMesa_FrontEnd
+
+2.  **Instalar dependencias del backend**
+
+    `npm i`
+
+3.  **Instalar dependencias del frontend**
+
+    `cd ../frontend
+    npm install`
+
+4.  **Configurar variables de entorno**
+
+    Crea un archivo `.env` en el directorio `backend` con las siguientes variables:
+
+    env
+
+    `DATABASE_URL=mongodb://localhost:27017/tu-db
+    PORT=3000`
+
+5.  **Iniciar los contenedores de Docker**
+
+    Desde la raíz del proyecto:
+
+    `docker-compose up -d`
+
+🚀 Uso
+------
+
+### Backend
+
+1.  **Iniciar el servidor NestJS**
+
+    `cd backend
+    npm run start:dev`
+
+2.  El servidor estará disponible en `http://localhost:3000`.
+
+3.  Swagger estara disponible en `http://localhost:3000/swagger`.
+
+### Frontend
+
+1.  **Iniciar la aplicación Angular**
+
+    `cd frontend
+    ng serve`
+
+2.  Abre tu navegador en `http://localhost:4200`.
+
+📚 Documentación
+----------------
+
+Para más detalles sobre la arquitectura y las funcionalidades, consulta la documentación.
+
+[PROXIMAMENTE]
+
+🤝 Contribuciones
+-----------------
+
+
+
+📄 Licencia
+-----------
+
+Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo LICENSE para más información.
+
+✉️ Contacto
+-----------
+
+-   **Autor:** Sergio González Martínez
+-   **Correo electrónico:** sergiogm.works@gmail.com
+-   **LinkedIn:** https://es.linkedin.com/in/sergiogm1999
+-   **GitHub:** https://github.com/sgm1018
