@@ -6,111 +6,20 @@
 
 :root {
   font-family: 'Inter', sans-serif, Arial, Helvetica;
-  --black: #000000ff;
-  --oxford-blue: #14213dff;
-  --orange-web: #fca311ff;
-  --blue: #0126FAff;
-  --white: #ffffffff;
-  --gray: #d3d3d3ff;
-
-  /* Backgrounds */
-  --background-main: var(--white);
-  --background-sidebar: var(--oxford-blue);
-  --background-card: #f5f5f5ff;
-  /* color de fondo para tarjetas y paneles */
-
-  /* Text */
-  --text-main: var(--black);
-  --text-secondary: #707070ff;
-  /* texto menos destacado, como subtítulos */
-  --text-sidebar: var(--white);
-  --text-link: var(--blue);
-
-  /* Buttons */
-  --button-primary-bg: var(--orange-web);
-  --button-primary-text: var(--white);
-  --button-secondary-bg: var(--blue);
-  --button-secondary-text: var(--white);
-
-  /* Menu */
-  --menu-background: var(--oxford-blue);
-  --menu-text: var(--white);
-  --menu-text-active: var(--orange-web);
-
-  /* Submenu */
-  --submenu-background: var(--oxford-blue);
-  --submenu-text: #A9A9A9ff;
-  /* gris claro para texto del submenu */
-
-  /* Charts */
-  --chart-new: var(--blue);
-  --chart-renewals: var(--orange-web);
-  --chart-others: var(--black);
-
-  /* Support Tickets */
-  --support-ticket-open: var(--blue);
-  --support-ticket-pending: var(--orange-web);
-  --support-ticket-closed: var(--oxford-blue);
-
-  /* Customer Demographics Map */
-  --map-active: var(--blue);
-  --map-inactive: #d3d3d3ff;
-  /* gris claro para inactivos */
+  --logo: #000000;
+  --bg-primary: #ffffff; /* Más blanco */
+  --bg-secondary: #f0f0f0; /* Un poco menos blanco */
+  --bg-third: #e0e0e0; /* Un poco menos blanco */
 }
 
 .dark {
-  --black: #000000ff;
-  --oxford-blue: #14213dff;
-  --orange-web: #fca311ff;
-  --blue: #0126FAff;
-  --white: #ffffffff;
+  font-family: 'Inter', sans-serif, Arial, Helvetica;
+  --logo : #ffffff;
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --bg-third: #242424;
 
-  /* Backgrounds */
-  --background-main: #1a1a1aff;
-  /* un tono oscuro para el fondo principal */
-  --background-sidebar: #121212ff;
-  /* aún más oscuro para el sidebar */
-  --background-card: #2c2c2cff;
-  /* fondo para tarjetas en modo oscuro */
 
-  /* Text */
-  --text-main: var(--white);
-  --text-secondary: #d3d3d3ff;
-  /* gris claro para subtítulos */
-  --text-sidebar: var(--white);
-  --text-link: var(--orange-web);
-
-  /* Buttons */
-  --button-primary-bg: var(--orange-web);
-  --button-primary-text: var(--black);
-  --button-secondary-bg: var(--blue);
-  --button-secondary-text: var(--white);
-
-  /* Menu */
-  --menu-background: var(--oxford-blue);
-  --menu-text: var(--white);
-  --menu-text-active: var(--orange-web);
-
-  /* Submenu */
-  --submenu-background: #1f1f1fff;
-  /* un gris oscuro para el submenu */
-  --submenu-text: #b0b0b0ff;
-  /* gris para el texto del submenu en modo oscuro */
-
-  /* Charts */
-  --chart-new: var(--blue);
-  --chart-renewals: var(--orange-web);
-  --chart-others: var(--white);
-
-  /* Support Tickets */
-  --support-ticket-open: var(--blue);
-  --support-ticket-pending: var(--orange-web);
-  --support-ticket-closed: var(--white);
-
-  /* Customer Demographics Map */
-  --map-active: var(--orange-web);
-  --map-inactive: #4f4f4fff;
-  /* un gris oscuro para inactivos en el mapa */
 }
 
 /* Estilos Globales */

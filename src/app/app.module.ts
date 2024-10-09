@@ -16,6 +16,8 @@ import { UserDropdownComponent } from './components/UserDropdown/UserDropdown.co
 import { NetworksComponent } from './components/Networks/Networks.component';
 import { MainContentComponent } from './components/MainContent/MainContent.component';
 import { BreadCumbsComponent } from './components/BreadCumbs/BreadCumbs.component';
+import { InputComponent } from './components/Input/Input.component';
+import { ButtonComponent } from './components/Button/Button.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { BreadCumbsComponent } from './components/BreadCumbs/BreadCumbs.componen
     UserDropdownComponent,
     NetworksComponent,
     MainContentComponent,
-    BreadCumbsComponent
+    BreadCumbsComponent,
+    InputComponent,
+    ButtonComponent
+
 
 
   ],
