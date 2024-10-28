@@ -1,3 +1,43 @@
-<p>
-  Input works!
-</p>
+
+<div>
+  @if (mode == "h") {
+    @if (type != "select") {
+      <div class="flex flex-row gap-1">
+        <label class="text-sm text-text-500">{{label}}</label>
+        <input type="{{type}}" class="rounded-lg p-2 w-full bg-background-100 text-text-500" placeholder="{{placeholder}}" />
+      </div>
+    }@else {
+      <div class="flex flex-row gap-1">
+        <label class="text-sm text-text-500">{{label}}</label>
+        <select class="rounded-lg p-2 w-full bg-background-100 text-text-500">
+          <option value="">{{placeholder}}</option>
+          @for (item of options; track $index) {
+            <option value="{{item}}">{{item}}</option>
+          }
+
+        </select>
+      </div>
+    }
+
+  }@else if (mode == "v") {
+
+    @if (type != "select") {
+      <div class="flex flex-col gap-1">
+        <label class="text-sm text-text-500">{{label}}</label>
+        <input type="{{type}}" class="rounded-lg p-2 w-full bg-background-100 text-text-500" placeholder="{{placeholder}}" />
+      </div>
+    }@else {
+      <div class="flex flex-col gap-1">
+        <label class="text-sm text-text-500">{{label}}</label>
+        <select class="rounded-lg p-2 w-full bg-background-100 text-text-500">
+          <option value="">{{placeholder}}</option>
+          @for (item of options; track $index) {
+            <option value="{{item}}">{{item}}</option>
+          }
+        </select>
+      </div>
+
+    }
+  }
+
+</div>

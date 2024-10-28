@@ -1,3 +1,4 @@
+import { MainService } from './../../../../services/Main.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mainService: MainService) {
+
+  }
 
   ngOnInit() {
+  }
+
+
+
+  getMainService(){
+    return this.mainService;
   }
 
 }

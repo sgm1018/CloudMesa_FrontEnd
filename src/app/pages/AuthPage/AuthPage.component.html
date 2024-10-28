@@ -1,3 +1,17 @@
-<div>
-  
+<div class="absolute flex flex-col justify-center items-center w-full h-full bg-background-700">
+  <div class="flex flex-row p-4 rounded bg-background-100">
+    <div class="flex flex-row gap-4">
+      @if (getMainService().getIsDarkMode())
+      {
+        <img src="assets/logo/logo_dark.svg" alt="">
+      }@else{
+        <img src="assets/logo/logo_light.svg" alt="">
+      }
+
+      <div class="flex flex-col gap-1">
+
+      </div>
+    </div>
+  </div>
+
 </div>
