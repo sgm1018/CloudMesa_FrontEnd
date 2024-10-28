@@ -9,7 +9,13 @@
       }
 
       <div class="flex flex-col gap-1">
-
+        <h3>Welcome to <span class="font-bold text-text">Cloud</span> <span class="font-bold text-primary-500">Mesa</span></h3>
+        <app-Input (onChange)="loginDto.Email = $event" [type]="'string'" placeholder="Email" [label]="'Email'" [isIcon]="true" [icon]="'mail'"></app-Input>
+        <app-Input (onChange)="loginDto.Password = $event" [type]="'string'" placeholder="Password" [label]="'Password'" [isIcon]="true" [icon]="'lock'"></app-Input>
+        <div class="flex pt-2 justify-center items-center w-full">
+          <button matTooltip="Enter CloudMesa"  class="bg-primary-300 hover:bg-primary-200 transition-colors duration-150 p-2 text-text rounded material-symbols-outlined">Login</button>
+        </div>
+        <!-- <app-Input [type]="'number'" placeholder="Password" [label]="'Password'" [isIcon]="true" [icon]="'lock'"></app-Input> -->
       </div>
     </div>
   </div>

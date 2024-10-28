@@ -18,7 +18,8 @@ import { MainContentComponent } from './components/MainContent/MainContent.compo
 import { BreadCumbsComponent } from './components/BreadCumbs/BreadCumbs.component';
 import { InputComponent } from './components/Input/Input.component';
 import { ButtonComponent } from './components/Button/Button.component';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,9 +44,12 @@ import { ButtonComponent } from './components/Button/Button.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,6 +6,7 @@
 
 :root {
   font-family: 'Inter', sans-serif, Arial, Helvetica;
+  color: var(--text);
   --logo: #000000;
   --background-100: #ffffff;
   --background-200: #f9f9f9;
@@ -20,12 +21,12 @@
   --primary-100: #ffe6d5;
   --primary-200: #ffccab;
   --primary-300: #ffb380;
-  --primary-400: #ff9956;
-  --primary-500: #f36615; /* Más blanco */
-  --primary-600: #cc5200;
-  --primary-700: #993d00;
-  --primary-800: #662900;
-  --primary-900: #331400;
+  --primary-400: #ff9933;
+  --primary-500: #ff8000; /* Más blanco */
+  --primary-600: #cc6600;
+  --primary-700: #994d00;
+  --primary-800: #663300;
+  --primary-900: #331a00;
 
   --secondary-100: #ffffff;
   --secondary-200: #f9f9f9;
@@ -40,6 +41,7 @@
 
 .dark {
   font-family: 'Inter', sans-serif, Arial, Helvetica;
+  color: var(--text);
   --logo : #ffffff;
   --background-100: #1a1a1a;
   --background-200: #333333;
@@ -51,15 +53,7 @@
   --background-800: #b3b3b3;
   --background-900: #cccccc;
   --text: #b9b9b9;
-  --primary-100: #f7c8a3;
-  --primary-200: #f5a97a;
-  --primary-300: #f28a52;
-  --primary-400: #f06b29;
-  --primary-500: #f36615; /* Más blanco */
-  --primary-600: #c75412;
-  --primary-700: #9b420e;
-  --primary-800: #6f2f0b;
-  --primary-900: #431d07;
+
 
   --secondary-100: #333333;
   --secondary-200: #2e2e2e;
@@ -84,43 +78,53 @@
 
 /* Títulos y Subtítulos */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text-main);
+  color: var(--text);
   margin-bottom: 1rem;
 }
 
 h1 {
+  color: var(--text);
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 h2 {
+  color: var(--text);
   font-size: 2rem;
   font-weight: 600;
 }
 
 h3 {
+  color: var(--text);
   font-size: 1.75rem;
   font-weight: 600;
 }
 
 h4 {
+  color: var(--text);
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 h5 {
+  color: var(--text);
   font-size: 1.25rem;
   font-weight: 500;
 }
 
 h6 {
+  color: var(--text);
   font-size: 1rem;
   font-weight: 500;
 }
 
 .card {
+  color: var(--text);
   background: var(--bg-primary-200);
   border-radius: 20px;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

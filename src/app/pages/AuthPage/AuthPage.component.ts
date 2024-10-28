@@ -1,3 +1,5 @@
+import { UsersService } from './../../../../services/users/Users.service';
+import { LoginDto } from '../../../../dto/user/LoginDto';
 import { MainService } from './../../../../services/Main.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./AuthPage.component.css']
 })
 export class AuthPageComponent implements OnInit {
-
-  constructor(private mainService: MainService) {
+  loginDto : LoginDto = new LoginDto();
+  constructor(private mainService: MainService, private UsersService: UsersService) {
 
   }
 
   ngOnInit() {
+  }
+
+  login(){
+
   }
 
 
